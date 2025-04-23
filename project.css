@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url(../images/bg2.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #333;
+}
+/* Header Styles */
+header {
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+nav {
+  position: relative;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #a2a2b9;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: rgb(122, 122, 204);
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#project {
+  background-color: rgba(255, 255, 255, 0.95);
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    color: white;
+  }
+
+  nav ul.nav {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  #menu-toggle:checked + .menu-icon + nav ul.nav {
+    display: flex;
+  }
+}

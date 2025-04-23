@@ -1,0 +1,131 @@
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url(../images/bg2.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  min-height: 100vh;
+}
+
+.thank-you-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 50px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 100px auto;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you-container h2 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #4a4a8d;
+}
+
+.thank-you-container p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn-back {
+  background-color: #4a4a8d;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+  background-color: #333366;
+}
+
+footer {
+  background-color: #1f1b1d;
+  color: #e7e7e9;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: auto;
+}
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    background: #f371b2;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    display: none;
+    padding: 10px 0;
+  }
+
+  #menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex;
+  }
+
+  #thank-you {
+    margin: 50px 10px;
+    padding: 15px;
+  }
+
+  #thank-you h2 {
+    font-size: 1.75rem;
+  }
+
+  #thank-you p {
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablet (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav-links {
+    gap: 10px;
+  }
+
+  #thank-you {
+    margin: 70px auto;
+    padding: 18px;
+  }
+
+  #thank-you h2 {
+    font-size: 1.9rem;
+  }
+
+  #thank-you p {
+    font-size: 1.05rem;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+}
+
+/* Large Devices (1025px and above) */
+@media (min-width: 1025px) {
+  #thank-you {
+    max-width: 700px;
+    padding: 30px;
+  }
+
+  #thank-you h2 {
+    font-size: 2rem;
+  }
+
+  #thank-you p {
+    font-size: 1.2rem;
+  }
+}
+  
