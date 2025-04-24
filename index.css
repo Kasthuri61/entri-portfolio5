@@ -5,7 +5,7 @@ html, body {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: url('../images/bg2.jpg') center/cover no-repeat;
+  background: url('bg2.jpg') center/cover no-repeat;
   display: flex;
   flex-direction: column;
 }
@@ -28,7 +28,7 @@ body {
 
 #hero {
   height: 80vh;
-  background: url('../images/hero-bg.jpg') center center / cover no-repeat;
+  background: url('bg.jpg') center center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
